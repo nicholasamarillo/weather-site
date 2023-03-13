@@ -9,40 +9,48 @@
     <title>Weather</title>
 </head>
 <body>
+    <div class="background">
+        <img src="" alt="">
+    </div>
+    
     <div class = "navbar text-center">WEATHER</div>
-    <div class="container">
-        <div class="row align-items-center my-3">
-            <div class = "col-md content-card shadow-lg rounded-3 ">
-                <div class="text-center"> Current Weather
-                    <div class = "container">
-                        <div class = "bg-success my-2">Image</div>
-                    </div>
-                    <div class = "container">
-                        <div class = "bg-warning my-2">Weather Data</div>
-                    </div>
-                </div>
-            </div>
-            <div class = "col-md content-card shadow-lg rounded-3 ">
-                <div class="bg-primary text-center">5 Day Forecast
-                    <div class = "container">
-                        <div class = "bg-success my-2 weather-day">.</div>
-                    </div>
-                    <div class = "container">
-                        <div class = "bg-warning my-2 weather-day">.</div>
-                    </div>
-                    <div class = "container">
-                        <div class = "bg-warning my-2 weather-day">.</div>
-                    </div>
-                    <div class = "container">
-                        <div class = "bg-warning my-2 weather-day">.</div>
-                    </div>
-                    <div class = "container">
-                        <div class = "bg-warning my-2 weather-day">.</div>
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid search-container my-3">
+        <div class = "row align-items-center text-center search-bar">
+            <input type="text" placeholder="Search your city...">
         </div>
     </div>
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-6 align-items-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Current Weather</h5>
+                      <p class="card-text">this is where the current weather will be placed from the api</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-6 align-items-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">5 day forecast</h5>
+                      <p class="card-text">this is where the 5 day forecast will be placed from the api</p>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">An item</li>
+                          <li class="list-group-item">A second item</li>
+                          <li class="list-group-item">A third item</li>
+                          <li class="list-group-item">A fourth item</li>
+                          <li class="list-group-item">A fifth item</li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+        
+    </div>
+        
 </body>
 <script src="javascript/index.js"></script>
 </html>
