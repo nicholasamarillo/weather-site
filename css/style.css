@@ -25,3 +25,16 @@ body{
 .search-bar{
     width:500px;
 }
+
+.row{
+    display:flex;
+    justify-content: center;
+}
+
+.search-result {
+    height: 40px;
+    width:200px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
