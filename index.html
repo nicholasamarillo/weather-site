@@ -16,38 +16,42 @@
     <div class = "navbar text-center">WEATHER</div>
     <div class="container search-container my-3">
         <div class = "row align-items-center text-center search-bar">
-            <form action="">
-                <input class="col-4 search-result" type="search" placeholder="Search your city...">
+                <input class="col-4 search-result" type="type" placeholder="Search your city...">
                 <button class = "col-2 btn bg-secondary m-1" type="submit">Enter</button>
-            </form>
         </div>
     </div>
 
     <div class="container">
-        <div class="row ">
-            <div class="col-6 align-items-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Current Weather</h5>
-                      <p class="card-text">this is where the current weather will be placed from the api</p>
+        <div class="row weather-row">
+            <div class="col align-items-center">
+                <div class="container weather-card">
+                    <div class="row">
+                        <div class="col">
+                            <h1 id="weather-emoji">⛅️</h1>
+                        </div>
                     </div>
-                  </div>
-            </div>
-            <div class="col-6 align-items-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">5 day forecast</h5>
-                      <p class="card-text">this is where the 5 day forecast will be placed from the api</p>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                          <li class="list-group-item">A fourth item</li>
-                          <li class="list-group-item">A fifth item</li>
-                        </ul>
+                    <div class="row">
+                        <div class="col">
+                            <h2 id="city-name">New York</h2>
+                        </div>
                     </div>
-                  </div>
+                    <div class="row">
+                        <div class="col">
+                            <h3 id="weather-style">Partly Cloudy</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4 id="current-weather">Temp: 50 F</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5 id="temp-high">High: 60 F</h5>
+                            <h5 id="temp-low">Low: 40 F</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
             
         </div>

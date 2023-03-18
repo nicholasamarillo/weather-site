@@ -4,23 +4,20 @@
 // to get the current weather of the city
 // https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 
-const url = "https://api.openweathermap.org/data/2.5/weather?";
+const url = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=";
 const apiKey = "d1603ebd153df14e914717e51ca63fee";
-const searchResult = document.querySelector(".search-result");
-const searchBtn = document.querySelector(".btn").addEventListener("click", getSearch());
-
-// function getSearch(){
-//     searchResult = searchResult.innerHTML;
-//     console.log(searchResult);
-// }
+const searchBtn = document.querySelector(".btn");
+const searchResult = document.querySelector(".search-bar input");
 
 
+async function checkWeather(city){
+    const res = await fetch(url + city + `&appid=${apiKey}`);
+    var data = await res.json();
+    console.log(data);
 
+    
+};
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?`)
-.then(res => res.json())
-.then(data => console.log(data));
-
-
-
-console.log(searchResult);
+searchBtn.addEventListener("click", ()=>{
+    checkWeather(searchResult.value);
+});
