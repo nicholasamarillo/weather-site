@@ -13,7 +13,6 @@ const searchResult = document.querySelector(".search-bar input");
 async function checkWeather(city){
     const res = await fetch(url + city + `&appid=${apiKey}`);
     var data = await res.json();
-    console.log(data);
 
     document.querySelector("#city-name").innerHTML = data.name;
     document.querySelector("#weather-style").innerHTML = data.weather[0].description.toUpperCase();
