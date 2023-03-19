@@ -60,3 +60,12 @@ h1{
     display: flex;
     justify-content: center;
 }
+
+footer{
+    height:60px;
+    width:100%;
+    background-color: rgba(230, 230, 230, 0.568);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
