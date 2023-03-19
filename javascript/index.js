@@ -16,7 +16,7 @@ async function checkWeather(city){
     console.log(data);
 
     document.querySelector("#city-name").innerHTML = data.name;
-    document.querySelector("#weather-style").innerHTML = data.weather[0].description;
+    document.querySelector("#weather-style").innerHTML = data.weather[0].description.toUpperCase();
     document.querySelector("#current-weather").innerHTML = data.main.temp + "°F";
     document.querySelector("#temp-high").innerHTML = data.main.temp_max + "°F";
     document.querySelector("#temp-low").innerHTML = data.main.temp_min + "°F";
